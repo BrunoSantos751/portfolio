@@ -1,171 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bruno Santos | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruno Santos | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="script.js"></script>
 </head>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#hero" class="logo">Bruno Santos</a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <button id="theme-toggle">☀️</button>
+  </nav>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-<a href="#hero" class="logo">Bruno Santos</a>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <h1>Oi, eu sou o Bruno 👋</h1>
+    <p>
+      Estudante de Ciência da Computação que gosta de construir coisas úteis —
+      desde plataformas web até projetos meio malucos com IA.
+    </p>
+    <p>
+      Gosto de entender como as coisas funcionam por baixo e transformar ideias
+      em sistemas reais.
+    </p>
+  </section>
 
-<ul class="nav-links">
-<li><a href="#about">Sobre</a></li>
-<li><a href="#projects">Projetos</a></li>
-<li><a href="#contact">Contato</a></li>
-</ul>
+  <!-- SOBRE -->
+  <section id="about" class="fade-in">
+    <h2>Sobre mim</h2>
+    <p>
+      Sou estudante de Ciência da Computação e gosto de resolver problemas criando
+      software. Curto mexer tanto com backend quanto frontend, integrar APIs,
+      automatizar tarefas e testar ideias novas.
+    </p>
+    <p>
+      A maioria dos meus projetos nasce de curiosidade ou de alguma dor real que
+      eu queria resolver — seja organizar dados, criar uma plataforma ou usar IA
+      para automatizar processos.
+    </p>
+    <p>
+      Hoje estou buscando oportunidades para aprender com projetos reais e crescer
+      como desenvolvedor.
+    </p>
+    <div class="tech-list">
+      <span>Python</span>
+      <span>JavaScript</span>
+      <span>TypeScript</span>
+      <span>React</span>
+      <span>SQL</span>
+      <span>Flask</span>
+      <span>Java</span>
+      <span>APIs</span>
+    </div>
+  </section>
 
-<button id="theme-toggle">☀️</button>
-</nav>
+  <!-- PROJETOS -->
+  <section id="projects" class="fade-in">
+    <h2>Projetos</h2>
+    <div class="projects-grid">
+      <!-- Auwalk-->
+      <div class="project-card">
+        <h3>Auwalk — plataforma para serviços de pets</h3>
+        <p>
+          Ideia de marketplace que conecta donos de pets com passeadores e cuidadores.
+          O foco foi pensar na experiência do usuário, fluxo de agendamento e estrutura
+          de um sistema real.
+        </p>
+        <a href="https://github.com/BrunoSantos751/Auwalk" target="_blank">
+          Ver no GitHub →
+        </a>
+      </div>
 
-<!-- HERO -->
-<section id="hero" class="hero">
-<h1>Oi, eu sou o Bruno 👋</h1>
+      <!-- Ludobox -->
+      <div class="project-card">
+        <h3>Ludobox — rede social para gamers</h3>
+        <p>
+          Projeto inspirado no Letterboxd, mas para jogos. Permite avaliar, organizar e
+          interagir com experiências de games. Foi um exercício interessante de modelagem
+          de dados e design de produto.
+        </p>
+        <a href="https://github.com/BrunoSantos751/Ludobox" target="_blank">
+          Ver no GitHub →
+        </a>
+      </div>
 
-<p>
-Estudante de Ciência da Computação que gosta de construir coisas úteis —
-desde plataformas web até projetos meio malucos com IA.
-</p>
+      <!-- Otimização de Consultas Espaciais -->
+      <div class="project-card">
+        <h3>Otimização de Consultas Espaciais</h3>
+        <p>Comparação de estruturas de dados para otimizar consultas espaciais com análise de performance.</p>
+        <a href="https://github.com/BrunoSantos751/Otimizacao-de-Consultas-Espaciais" target="_blank">Ver no GitHub →</a>
+      </div>
 
-<p>
-Gosto de entender como as coisas funcionam por baixo e transformar ideias
-em sistemas reais.
-</p>
-</section>
+      <!-- Sistema de legendas automáticas com IA -->
+      <div class="project-card">
+        <h3>Sistema de legendas automáticas com IA</h3>
+        <p>
+          Ferramenta que transcreve áudio, traduz e gera legendas automaticamente.
+          Nasceu da vontade de automatizar legendas de vídeos e explorar aplicações
+          práticas de IA.
+        </p>
+        <a href="https://github.com/BrunoSantos751/TranslatedSubGen" target="_blank">
+          Ver no GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
 
-<!-- SOBRE -->
-<section id="about" class="fade-in">
-<h2>Sobre mim</h2>
+  <!-- CONTATO -->
+  <section id="contact" class="fade-in">
+    <h2>Onde me encontrar</h2>
+    <p>
+      Você pode acompanhar meus projetos, estudos e experiências pelas minhas redes:
+    </p>
+    <div class="contact-icons">
+      <a href="mailto:santosmoraes79@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://github.com/BrunoSantos751" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/brunosantos751" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </section>
 
-<p>
-Sou estudante de Ciência da Computação e gosto de resolver problemas criando
-software. Curto mexer tanto com backend quanto frontend, integrar APIs,
-automatizar tarefas e testar ideias novas.
-</p>
-
-<p>
-A maioria dos meus projetos nasce de curiosidade ou de alguma dor real que
-eu queria resolver — seja organizar dados, criar uma plataforma ou usar IA
-para automatizar processos.
-</p>
-
-<p>
-Hoje estou buscando oportunidades para aprender com projetos reais e crescer
-como desenvolvedor.
-</p>
-
-<div class="tech-list">
-<span>Python</span>
-<span>JavaScript</span>
-<span>TypeScript</span>
-<span>React</span>
-<span>SQL</span>
-<span>Flask</span>
-<span>Java</span>
-<span>APIs</span>
-</div>
-</section>
-
-<!-- PROJETOS -->
-<section id="projects" class="fade-in">
-<h2>Projetos</h2>
-
-<div class="projects-grid">
-
-<!-- Auwalk-->
-<div class="project-card">
-<h3>Auwalk — plataforma para serviços de pets</h3>
-
-<p>
-Ideia de marketplace que conecta donos de pets com passeadores e cuidadores.
-O foco foi pensar na experiência do usuário, fluxo de agendamento e estrutura
-de um sistema real.
-</p>
-
-<a href="https://github.com/BrunoSantos751/Auwalk" target="_blank">
-Ver no GitHub →
-</a>
-</div>
-
-<!-- Ludobox -->
-<div class="project-card">
-<h3>Ludobox — rede social para gamers</h3>
-
-<p>
-Projeto inspirado no Letterboxd, mas para jogos. Permite avaliar, organizar e
-interagir com experiências de games. Foi um exercício interessante de modelagem
-de dados e design de produto.
-</p>
-
-<a href="https://github.com/BrunoSantos751/Ludobox" target="_blank">
-Ver no GitHub →
-</a>
-</div>
-
-<!-- Otimização de Consultas Espaciais -->
-<div class="project-card">
-<h3>Otimização de Consultas Espaciais</h3>
-<p>Comparação de estruturas de dados para otimizar consultas espaciais com análise de performance.</p>
-<a href="https://github.com/BrunoSantos751/Otimizacao-de-Consultas-Espaciais" target="_blank">Ver no GitHub →</a>
-</div>
-
-
-<!-- Sistema de legendas automáticas com IA -->
-<div class="project-card">
-<h3>Sistema de legendas automáticas com IA</h3>
-
-<p>
-Ferramenta que transcreve áudio, traduz e gera legendas automaticamente.
-Nasceu da vontade de automatizar legendas de vídeos e explorar aplicações
-práticas de IA.
-</p>
-
-<a href="https://github.com/BrunoSantos751/TranslatedSubGen" target="_blank">
-Ver no GitHub →
-</a>
-</div>
-
-</div>
-</section>
-
-<!-- CONTATO -->
-<section id="contact" class="fade-in">
-<h2>Onde me encontrar</h2>
-
-<p>
-Você pode acompanhar meus projetos, estudos e experiências pelas minhas redes:
-</p>
-
-<div class="contact-icons">
-
-<a href="mailto:santosmoraes79@gmail.com" target="_blank">
-<i class="fa-solid fa-envelope"></i>
-</a>
-
-<a href="https://github.com/BrunoSantos751" target="_blank">
-<i class="fa-brands fa-github"></i>
-</a>
-
-<a href="https://www.linkedin.com/in/brunosantos751" target="_blank">
-<i class="fa-brands fa-linkedin"></i>
-</a>
-
-</div>
-</section>
-
-<!-- footer -->
-<footer>
-<p>© 2026 Bruno Santos</p>
-</footer>
-
+  <!-- footer -->
+  <footer>
+    <p>© 2026 Bruno Santos</p>
+  </footer>
 </body>
 </html>
